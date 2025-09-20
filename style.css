@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assests/images/bg.jpg");
+   background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+
+}
+
+.box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.main nav {
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 148px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+
+    /* height: 100%; */
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.span1 {
+    font-size: 56px;
+    /* margin: 0px 0px 16px; */
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main input {
+    padding: 14px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 5px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.first h2 {
+    color: white;
+    margin: 28px 123px;
+    padding:
+}
+
+.imgsec {
+    margin: 10px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgsec img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+}
+
+.imgsec img:hover {
+    width: 25%;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.inp2 {
+    color: white;
+    font-size: 12px;
+    background-color: rgba(23, 23, 23, 0.7);
+    padding: 14px 342px 8px 14px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(246, 238, 238, 0.5);
+    border-image: initial;
+
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+
+    padding: 25px;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 36px;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    /* max-width: 60vw;
+    margin: auto; */
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .main nav {
+        max-width: 90vw;
+    }
+.first {
+        flex-wrap: wrap;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .span1 {
+        font-size: 32px;
+
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+
+        font-size: 18px;
+
+    }
+
+    .hero-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 36px;
+    }
+
+    .inp2 {
+        padding: 12px 185px 8px 14px;
+    }
+
+    .faq h2 {
+        font-family: unset;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    footer {
+        max-width: 90vw;
+    }
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e172b;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    color: #ccc;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.icon {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: right;
+}
+
+/* Example emojis for icons */
+/* .tv::before { content: "📺"; } */
+/* .download::before { content: "⬇️"; } */
+/* .watch::before { content: "🔭"; }
+    .kids::before { content: "🎭"; } */
+
+    .last{
+          padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+      .last p {
+      margin: 20px 0 10px;
+      font-size: 13px;
+          color: rgba(255, 255, 255, 0.5);
+    }
+      .last a {
+      color: #3b82f6;
+      /* text-decoration: none; */
+    }
+    
+    .last a:hover {
+      text-decoration: underline;
+    }
+
+.language-select {
+    background: transparent;
+    color: white;
+    border: 1px solid #444;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-block: 15px;
+}

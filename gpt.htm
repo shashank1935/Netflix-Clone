@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Reasons to Join</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141e30, #1f1c2c);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #ccc;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .icon {
+      margin-top: 20px;
+      font-size: 2rem;
+      text-align: right;
+    }
+
+    
+    .language-select {
+      background: transparent;
+      color: white;
+      border: 1px solid #444;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .footer p {
+      margin: 20px 0 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .footer a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+     .footer {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+     }
+
+    /* Example emojis for icons */
+    .tv::before { content: "📺"; }
+    .download::before { content: "⬇️"; }
+    .watch::before { content: "🔭"; }
+    .kids::before { content: "🎭"; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>More reasons to join</h1>
+    <div class="cards">
+      <div class="card">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        <div class="icon tv"></div>
+      </div>
+
+      <div class="card">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favourites easily and always have something to watch.</p>
+        <div class="icon download"></div>
+      </div>
+
+      <div class="card">
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        <div class="icon watch"></div>
+      </div>
+
+      <div class="card">
+        <h2>Create profiles for kids</h2>
+        <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+        <div class="icon kids"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <!-- Language Dropdown -->
+    <select class="language-select">
+      <option>🌐 English</option>
+      <option>हिन्दी</option>
+    </select>
+
+    <!-- Netflix Region -->
+    <p>Netflix India</p>
+
+    <!-- Google reCAPTCHA Note -->
+    <p>
+      This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+      <a href="#">Learn more.</a>
+    </p>
+  </div>
+</body>
+</html>
